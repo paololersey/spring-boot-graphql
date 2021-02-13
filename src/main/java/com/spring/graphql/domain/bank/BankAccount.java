@@ -11,6 +11,6 @@ public class BankAccount {
 
     UUID id;
     String name;
-    //Client client;
+    Client client;
     Currency currency;
 }

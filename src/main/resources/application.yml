@@ -2,15 +2,15 @@ server:
   port: 8090
 graphql:
   servlet:
-    maxQueryDepth: 100
+    maxQueryDepth: 20
     actuator-metrics: true
   playground:
     enabled: true
-    #headers:
-    #  Authorization: Bearer TOKEN
-    #tabs:
-    #  - name: Bank account sample query
-    #    query: classpath:playground/bank_account.graphql
-    #    variables: classpath:playground/bank_account_variables.json
+    headers:
+      Authorization: Bearer TOKEN
+    tabs:
+      - name: Bank account sample query
+        query: classpath:playground/bank_account.graphql
+        variables: classpath:playground/bank_account_variables.json
     #cdn:
     #  version: latest

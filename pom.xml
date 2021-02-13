@@ -40,11 +40,12 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!--<dependency>
-			<groupId>com.graphql-java</groupId>
-			<artifactId>graphql-java-tools</artifactId>
+		<dependency>
+			<groupId>com.graphql-java-kickstart</groupId>
+			<artifactId>voyager-spring-boot-starter</artifactId>
 			<version>${graphql.version}</version>
-		</dependency>-->
+			<scope>runtime</scope>
+		</dependency>
 
 
 

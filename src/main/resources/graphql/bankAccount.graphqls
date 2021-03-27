@@ -1,7 +1,7 @@
 # All available queries on this graphql server
 type BankAccount {
     id: ID
-    client: Client
+    client: Client!
     name: String
     currency: Currency
 }

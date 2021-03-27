@@ -1,4 +1,4 @@
-package com.spring.graphql.resolver;
+package com.spring.graphql.resolver.bank.query;
 
 import com.spring.graphql.domain.bank.BankAccount;
 import com.spring.graphql.domain.bank.Client;
@@ -15,7 +15,6 @@ public class BankAccountResolver implements GraphQLQueryResolver {
 
     public BankAccount bankAccount(UUID id){
         System.out.println("retrieve bank account id {} " + id);
-        Client client = Client.builder().firstName("Paul").lastName("Spash").id(id).build();
-        return BankAccount.builder().id(id).currency(Currency.USD).client(client).name("Paul").build();
+        return BankAccount.builder().id(id).currency(Currency.USD).build();
     }
 }

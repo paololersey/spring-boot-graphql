@@ -4,7 +4,7 @@ graphql:
   servlet:
     maxQueryDepth: 20
     actuator-metrics: true
-    exception-handlers-enabled: true
+    exception-handlers-enabled: false
   playground:
     enabled: true
     headers:
